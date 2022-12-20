@@ -1,0 +1,7 @@
+﻿ID;locale;name;description
+1;en;Employee;Employee of the company
+2;en;Supplier;Supplier of goods
+3;en;Producer;Producer of goods
+1;de;Mitarbeiter;Mitarbeiter des Unternehmens
+2;de;Lieferant;Lieferant von Waren
+3;de;Hersteller;Produzent von Waren
