@@ -1,0 +1,1 @@
+using BupaService as service from '../../srv/businesspartner-service';

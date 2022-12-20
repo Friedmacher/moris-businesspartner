@@ -1,5 +1,5 @@
 ﻿ID;createdAt;createdBy;modifiedAt;modifiedBy;companyname;firstname;middlename;lastname;nickname;department;jobtitle;notes;prefix;suffix;taxnumber;birthday;gender_ID
-20466922-7d57-4e76-b14c-e53fd97dcb11;;;;;SAP Österreich GmbH;Manuel;;Friedmacher;;Services;Consultant;This is for some text notes.;Ing.;MBA;;16.02.1975;1
+20466922-7d57-4e76-b14c-e53fd97dcb11;;;;;SAP Österreich GmbH;Manuel;;Friedmacher;;Services;Consultant;This is for some text notes. And the text here could be ver long and spann over multiple lines.;Ing.;MBA;;16.02.1975;1
 20466922-7d57-4e76-b14c-e53fd97dcb12;;;;;;Julia;;Maier;;Sales;AE;;;;;;2
 20466922-7d57-4e76-b14c-e53fd97dcb13;;;;;;Max;Maria;Muster;;Development;Java;;;;;;3
 20466922-7d57-4e76-b14c-e53fd97dcb14;;;;;Conrad;;;;;;;;;;;;

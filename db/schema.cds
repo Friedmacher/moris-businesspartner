@@ -12,9 +12,10 @@ entity BusinessPartners : cuid, managed {
     middlename    : String;
     lastname      : String;
     nickname      : String;
+    fullname      : String;
     department    : String;
     jobtitle      : String;
-    notes         : String;
+    notes         : String @UI.MultiLineText;
     prefix        : String;
     suffix        : String;
     taxnumber     : String;
