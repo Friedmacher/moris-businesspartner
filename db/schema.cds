@@ -19,6 +19,7 @@ entity BusinessPartners : cuid, managed {
     prefix        : String;
     suffix        : String;
     taxnumber     : String;
+    image         : String;
     birthday      : Date;
     gender        : Association to Genders;
     type          : Association to Types;

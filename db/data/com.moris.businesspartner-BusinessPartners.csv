@@ -1,6 +1,6 @@
-﻿ID;createdAt;createdBy;modifiedAt;modifiedBy;companyname;firstname;middlename;lastname;nickname;department;jobtitle;notes;prefix;suffix;taxnumber;birthday;gender_ID
-20466922-7d57-4e76-b14c-e53fd97dcb11;;;;;SAP Österreich GmbH;Manuel;;Friedmacher;;Services;Consultant;This is for some text notes. And the text here could be ver long and spann over multiple lines.;Ing.;MBA;;16.02.1975;1
-20466922-7d57-4e76-b14c-e53fd97dcb12;;;;;;Julia;;Maier;;Sales;AE;;;;;;2
-20466922-7d57-4e76-b14c-e53fd97dcb13;;;;;;Max;Maria;Muster;;Development;Java;;;;;;3
-20466922-7d57-4e76-b14c-e53fd97dcb14;;;;;Conrad;;;;;;;;;;;;
-20466922-7d57-4e76-b14c-e53fd97dcb15;;;;;Sony AG;;;;;;;;;;;;
+﻿ID;createdAt;createdBy;modifiedAt;modifiedBy;companyname;firstname;middlename;lastname;nickname;department;jobtitle;notes;prefix;suffix;taxnumber;birthday;gender_ID;type_ID;image
+20466922-7d57-4e76-b14c-e53fd97dcb11;;;;;SAP Österreich GmbH;Manuel;;Friedmacher;;Services;Consultant;This is for some text notes. And the text here could be ver long and spann over multiple lines.;Ing.;MBA;;16.02.1975;20221221-1948-7514-4518-7e14de180000;20221221-1948-2025-1605-202516e19000;sap-icon://person-placeholder
+20466922-7d57-4e76-b14c-e53fd97dcb12;;;;;;Julia;;Maier;;Sales;AE;;;;;;20221221-1948-7514-4518-7e14de180001;20221221-1948-2025-1605-202516e19000;sap-icon://person-placeholder
+20466922-7d57-4e76-b14c-e53fd97dcb13;;;;;;Max;Maria;Muster;;Development;Java;;;;;;20221221-1948-7514-4518-7e14de180002;20221221-1948-2025-1605-202516e19000;sap-icon://person-placeholder
+20466922-7d57-4e76-b14c-e53fd97dcb14;;;;;Conrad;;;;;;;;;;;;;20221221-1948-2025-1605-202516e19002;sap-icon://building
+20466922-7d57-4e76-b14c-e53fd97dcb15;;;;;Sony AG;;;;;;;;;;;;;20221221-1948-2025-1605-202516e19002;sap-icon://building

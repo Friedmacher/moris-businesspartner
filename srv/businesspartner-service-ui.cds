@@ -23,6 +23,7 @@ annotate BupaService.BusinessPartners with @(
         HeaderInfo: {
 			TypeName: '{i18n>bupa}',
 			TypeNamePlural: '{i18n>bupas}',
+            ImageUrl: image,
 			Title          : {
                 $Type : 'UI.DataField',
                 Value : fullname
@@ -32,18 +33,26 @@ annotate BupaService.BusinessPartners with @(
 				Value: companyname
 			}
 		},
-        LineItem  : [
+        Identification: [
+            {
+                $Type : 'UI.DataFieldForAction',
+                Label : 'Copy with new supplier',
+                Action : 'doCopy',
+                ![@UI.Importance] : #High
+            }
+        ],
+        LineItem: [
             {Value: companyname},
             {Value: firstname},
             {Value: lastname},
         ],
-        Facets  : [
+        Facets: [
             {$Type: 'UI.ReferenceFacet', Label: '{i18n>persondata}', Target: '@UI.FieldGroup#PersonData'},
             {$Type: 'UI.ReferenceFacet', Label: '{i18n>companydata}', Target: '@UI.FieldGroup#CompanyData'},
             {$Type: 'UI.ReferenceFacet', Label: '{i18n>organization}', Target: '@UI.FieldGroup#Organization'},
             {$Type: 'UI.ReferenceFacet', Label: '{i18n>notes}', Target: '@UI.FieldGroup#Notes'},
         ],
-        FieldGroup#PersonData : {
+        FieldGroup#PersonData: {
             Data: [
                 {Value: firstname},
                 {Value: middlename},
@@ -55,7 +64,7 @@ annotate BupaService.BusinessPartners with @(
                 {Value: birthday}
             ]
         },
-        FieldGroup#CompanyData  : {
+        FieldGroup#CompanyData: {
             Data: [
                 {Value: companyname},
                 {Value: department},
@@ -68,7 +77,7 @@ annotate BupaService.BusinessPartners with @(
 				{Value: type_ID}
 			]
 		},
-        FieldGroup#Notes : {
+        FieldGroup#Notes: {
             Data: [
                 {Value: notes}
             ]
