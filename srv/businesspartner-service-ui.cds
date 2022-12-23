@@ -33,11 +33,14 @@ annotate BupaService.BusinessPartners with @(
 				Value: companyname
 			}
 		},
+        SelectionFields  : [
+            type_ID
+        ],
         Identification: [
             {
                 $Type : 'UI.DataFieldForAction',
-                Label : 'Copy with new supplier',
-                Action : 'doCopy',
+                Label : '{i18n>btn_copy}',
+                Action : 'BupaService.doCopy',
                 ![@UI.Importance] : #High
             }
         ],

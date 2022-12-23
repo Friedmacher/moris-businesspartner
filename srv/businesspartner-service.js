@@ -4,11 +4,18 @@ class BupaService extends cds.ApplicationService {
     async init() {
         const { BusinessPartners } = this.entities
 
+        // Automatically update field fullname depending on business partner type.
         this.before ('CREATE', 'BusinessPartners', (req)=>{
             const bupa = req.data
-            bupa.fullname = bupa.lastname + ', ' + bupa.firstname
+            if (bupa.type_ID === '20221221-1948-2025-1605-202516e19000') {
+                bupa.fullname = bupa.lastname + ', ' + bupa.firstname
+            } else {
+                bupa.fullname = bupa.companyname
+            }
+            
         })
 
+        // Update fields after save.
         this.before ('UPDATE', 'BusinessPartners', (req)=>{
             const bupa = req.data
             if (bupa.companyname != null) {
@@ -18,14 +25,10 @@ class BupaService extends cds.ApplicationService {
             }
         })
 
-        this.on ('doCopy', async(req)=>{
-            const bupa = req.data
-            bupa.companyname = 'COPY'
+        // Event handler for copy button.
+        this.on ('doCopy', 'BusinessPartners', async req => {
+            await cds.update(BusinessPartners, req.params[0].ID).set({companyname: 'COPY'})
         })
-
-        // this.after ('READ','BusinessPartners', (businesspartners)=>{
-        //     for (let each of businesspartners) each.fullname = 'Full Name AUTO'
-        // })
 
         await super.init()
     }
